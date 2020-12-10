@@ -1,10 +1,10 @@
 {
   "name": "amir-benkoula.github.io",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --include-path scss/ scss/main.scss --output dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Amir-Benkoula/amir-benkoula.github.io/issues"
   },
-  "homepage": "https://github.com/Amir-Benkoula/amir-benkoula.github.io#readme"
+  "homepage": "https://github.com/Amir-Benkoula/amir-benkoula.github.io#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "node-sass": "^5.0.0"
+  }
 }
