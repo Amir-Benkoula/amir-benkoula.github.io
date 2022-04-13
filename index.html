@@ -10,74 +10,52 @@
 
     <link rel="icon" href="img/programmerico.png" />
 
-    <title>Mon CV</title>
+    <title>Amir Benkoula</title>
 </head>
 <body>
 <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(78, 42, 12);">
         <div class="navbar-brand ml-2">Amir BENKOULA</div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Mon CV <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">CV<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Compétences
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="competences_pages/patrimoine_info.html">B1.1</a></li>
+                      <li><a class="dropdown-item" href="competences_pages/gestion_incidents.html">B1.2</a></li>
+                      <li><a class="dropdown-item" href="competences_pages/presence_en_ligne.html">B1.3</a></li>
+                      <li><a class="dropdown-item" href="competences_pages/mode_projet.html">B1.4</a></li>
+                      <li><a class="dropdown-item" href="competences_pages/service_info.html">B1.5</a></li>
+                      <li><a class="dropdown-item" href="competences_pages/dev_pro.html">B1.6</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="carousel.html">Carousel<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="">Réalisations professionnelles<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="carousel.html">Veille developpement web<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="">Veille developpement web<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
 <div class="row">
-    <div class="col-sm-9  mt-5 ml-5">
-        <h1>Etudiant</h1>
-        <h3>Ecole Pratique</h3>
+    <div class="col-sm-8  mt-5 ml-5">
+        <h1>Développeur en formation</h1>
+        <h3>Ecole Pratique - JWA Lab</h3>
         <div class="card border-primary mt-4" style="max-width: 50rem;">
             <div class="card-body">
-                <p class="card-text text-primary">Je suis étudiant en BTS SIO SLAM, j'apprend à développer depuis mes 14ans, j'ai pour objectif de devenir ingénieur et de me lancer dans la création de projets informatique.</p>
+                <p class="card-text text-primary">Je suis étudiant en BTS SIO SLAM et développeur en alternance chez JWA Lab, j'apprends à développer depuis mes 14ans, mon objectif professionnel est de devenir ingénieur logiciel et de me lancer dans la création de projets informatique.</p>
             </div>
         </div>
     </div>
-    <!-- Button trigger modal -->
-    <div class="col-sm-2 mt-5 mr-4">
-    <div data-toggle="modal" data-target="#exampleModal">
-        <img src="img/icon.jpg" width="200" alt="..." class="img-thumbnail" >
-    </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/icon.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <a href="5g.html" ><img src="img/5g.jpg" class="d-block w-100" alt="..."></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="5g.html" ><img src="img/ransomware.png" class="d-block w-100" alt="..."></a>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="col-sm-3 mt-5 ml-5">
+        <img src="img/pp.jpg" width="230" alt="..." class="img-thumbnail" >
     </div>
 </div>
 
@@ -253,6 +231,7 @@
 </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
