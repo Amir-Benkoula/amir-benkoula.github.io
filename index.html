@@ -1,264 +1,268 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Amir Benkoula</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/programmerico.png" />
+    <title>Amir Benkoula</title>
 
     <style>
-        .line{
-            width: 95%;
-            height: 50px;
-            border-bottom: 1px solid grey;
-            position: absolute;
-        }
-
-        img{
-            filter: drop-shadow(0 0 0.50rem black);
-        }
-
-        a{
-            color: white;
-        }
-        
-        a:hover{
-            color: #DDE18E;
-        }
-
         .card{
-            box-shadow: 1px 1px 10px black;
+            background-color: #DBE2EF;
         }
-        footer {
-            position: static;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #184E77;
-            color: white;
-            text-align: center;
-            box-shadow: 1px 1px 10px black;
+
+        a, a:hover {
+            color: #3F72AF;
         }
     </style>
 </head>
-<body style="background-color: #d0f4ba;">
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #184E77; box-shadow: 1px 1px 10px;" >
-    <a class="navbar-brand" href="index.html">Amir Benkoula</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Compétences
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Amir Benkoula</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown active">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projets
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="competences_pages/changement_email_mdp.html">Application web PlayTiX</a></li>
-                    <li><a class="dropdown-item" href="competences_pages/deploiement_npm.html">Déploiement d'un paquet sur npm</a></li>
+                    <li><a class="dropdown-item" href="pages/appli_web_playtix.html">Application web PlayTiX</a></li>
+                    <li><a class="dropdown-item" href="">CLI Terraform et déploiement NPM</a></li>
                 </ul>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="">Réalisations professionnelles<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="./pages/veille.html">Veille developpement web<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="container py-4">
-    <div class="d-flex m-5">
-        <div class="col-sm-9 ml-4" style="color: #184E77">
-            <h1 class="display-4">Développeur en formation</h1>
-            <h3 class="lead"><b>Ecole Pratique - JWA Lab</b></h3>
-            <div class="rounded p-3 mt-4 mr-4 text-white" style="background-color: #52B69A; box-shadow: 1px 1px 10px black;">Bonjour, je m'appelle Amir j'ai 22 ans et je suis développeur en formation. J'aime créer, entreprendre, et développer depuis le longtemps, c'est pourquoi je me suis naturellement tourné vers des études dans le domaine de l'informatique. Mon objectif est de devenir ingénieur logiciel, et de toujours continuer à apprendre bien sur !</div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">Réalisations professionnelles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">Veille developpement web</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-sm-3">
-            <img src="img/pp.jpg" width="230" alt="..." class="img-thumbnail" >
-        </div>
-    </div>
-    <div class="row ml-5" data-masonry='{"percentPosition": true }'>
-        <div class="col-sm-6 col-lg-6">
-            <div class="card text-white" style="background-color: #1E6091;">
-                <div class="card-body">
-                <h5 class="card-title lead"><b>Diplômes et Formations</b></h5>
-                <ul>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                            <p>BTS Services Informatiques aux Organisations Option SLAM</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                Depuis septembre 2020 Ecole Pratique Marseille 09, France
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                            <p>L1 Portail Descartes / L1 Mathématiques/Informatique</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                De 2017 à 2019 Aix-Marseille Université Marseille Saint-Charles
-                                <li class="ml-4">Validation des matières informatiques</li>
-                                <li class="ml-4">Validation du Certificat Informatique et Internet (C2I)</li>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                            <p>Baccalauréat Scientifique</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                2017 Lycée Montgrand Marseille 06, France
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                            <p>Brevet des collèges</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                2014 Collège Massenet Marseille 14, France
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
+    </nav>
+        
+    <div class="container py-4">
+        <div class="row m-4">
+            <div class="col-sm-9">
+                <h1 class="display-4">Développeur Informatique</h1>
+                <h3 class="lead"><b>Ecole Pratique - JWA Lab</b></h3>
+                <div class="alert alert-primary mt-4" role="alert">
+                    Bonjour, je m'appelle Amir j'ai 22 ans et je suis développeur en formation. J'aime créer, entreprendre, et développer depuis le longtemps, c'est pourquoi je me suis naturellement tourné vers des études dans le domaine de l'informatique. Mon objectif est de devenir ingénieur logiciel, et de toujours continuer à apprendre bien sur !
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6 col-lg-6">
-            <div class="card text-white" style="background-color: #1A759F;">
-                <div class="card-body">
-                <h5 class="card-title lead"><b>Expériences professionnelles</b></h5>
-                <ul>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                            <p>Développeur web 2/3</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                Depuis décembre 2020 JWA Lab Strasbourg, France
-                                <li class="ml-4">Réalisations dans la partie blockchain (smart-contracts Tezos et web services)</li>
-                                <li class="ml-4">Développement front et back de l'application web (NestJs, Handlebars, React)</li>
-                                <li class="ml-4">Développement d'un CLI pour faciliter le déploiement (NodeJs)</li>
-                                <li class="ml-4">Ajout de documentation et recherche</li>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                            <p>Agent de livraison</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                Août 2020 LA POSTE Marseille
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                                <p>Agent d’Information et de Logistique</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                De janvier 2020 à février 2020 Mairie des 1er et 7eme arrondissement de Marseille
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <blockquote class="blockquote">
-                            <p>Stage dans un cabinet Kinésithérapie</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                De 2013 à 2014 Négrin Franck La Maurelette 10 pl Commerce, 13015 MARSEILLE
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-                </div>
+            <div class="col-sm-3">
+                <img src="img/pp.jpg" width="260" alt="..." class="img-thumbnail" >
             </div>
         </div>
-        <div class="col-sm-6 col-lg-6 mt-4">
-            <div class="card text-white" style="background-color: #168AAD;">
-                <div class="card-body">
-                    <h5 class="card-title lead"><b>Réseaux sociaux</b></h5>
-                    <li class="ml-4 mt-3">GitHub - @Amir-Benkoula</li>
-                    <li class="ml-4">LinkedIn - @amir-benkoula</li>
-                    <h5 class="lead mt-4"><b>Contact</b></h5>
-                    <p class="ml-4">benkoula.amir@hotmail.com</p>
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-6 col-lg-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title lead">
+                            <b>Diplômes et Formations</b>
+                        </h5>
+                        <ul class="mt-3">
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                    <p>BTS Services Informatiques aux Organisations Option SLAM</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        Depuis septembre 2020 Ecole Pratique Marseille 09, France
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                    <p>L1 Portail Descartes / L1 Mathématiques/Informatique</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        De 2017 à 2019 Aix-Marseille Université Marseille Saint-Charles
+                                        <ul>
+                                            <li class="ml-4">Validation des matières informatiques</li>
+                                            <li class="ml-4">Validation du Certificat Informatique et Internet (C2I)</li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                    <p>Baccalauréat Scientifique</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        2017 Lycée Montgrand Marseille 06, France
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                    <p>Brevet des collèges</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        2014 Collège Massenet Marseille 14, France
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6 col-lg-6 mt-4">
-            <div class="card text-white" style="background-color: #34A0A4;">
-                <div class="card-body">
-                    <h5 class="card-title lead"><b>Fiche métier</b></h5>
-                    <p class="ml-4 mt-4"><a href="https://www.onisep.fr/Ressources/Univers-Metier/Metiers/developpeur-developpeuse-informatique">Développeur Informatique</a></p>
-                    <p class="ml-4"><a href="https://www.onisep.fr/content/location/762296/version_longue">Ingénieur Logiciel</a></p>
+            <div class="col-sm-6 col-lg-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title lead"><b>Expériences professionnelles</b></h5>
+                        <ul class="mt-3">
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                    <p>Développeur web 2/3</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        Depuis décembre 2020 JWA Lab Strasbourg, France
+                                        <ul>
+                                            <li>Réalisations dans la partie blockchain (smart-contracts Tezos et web services)</li>
+                                            <li>Développement front et back de l'application web (NestJs, Handlebars, React)</li>
+                                            <li>Développement d'un CLI pour faciliter le déploiement (NodeJs)</li>
+                                            <li>Ajout de documentation et recherche</li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                    <p>Agent de livraison</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        Août 2020 LA POSTE Marseille
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                        <p>Agent d’Information et de Logistique</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        De janvier 2020 à février 2020 Mairie des 1er et 7eme arrondissement de Marseille
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <blockquote class="blockquote">
+                                    <p>Stage dans un cabinet Kinésithérapie</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        De 2013 à 2014 Négrin Franck La Maurelette 10 pl Commerce, 13015 MARSEILLE
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row ml-5">
-        <div class="col-sm-12 mt-4">
-            <div class="card text-white" style="background-color: #52B69A;">
-                <div class="card-body">
-                    <h5 class="card-title lead"><b>Mon autoformation</b></h5>
-                    <h5 class="mt-5 ml-3">MOOC et documentations</h5>
-                    <div class="row text-center">
-                        <div class="col my-4">
-                            <img src="img/nestjs_logo.svg" class="img-fluid" alt="Responsive image" style="max-width: 8rem;"> 
-                        </div>
-                        <div class="col m-auto">
-                            <img class="mx-4" src="img/coursera-logo.png" class="img-fluid" alt="Responsive image" style="max-width: 15rem;"> 
-                        </div>
-                        <div class="col my-4">
-                            <img class="mx-4" src="img/codewars-logo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem;"> 
+            <div class="col-sm-6 col-lg-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title lead"><b>Réseaux sociaux</b></h5>
+                        <ul class="mt-3">
+                            <p class="card-title"><img src="img/github.png" alt=""> @Amir-Benkoula</p>
+                            <p class="card-title ml-4"><img src="img/linkedin.png" alt=""> @amir-benkoula</p>
+                        </ul>
+                        <h5 class="card-title lead"><b>Contact</b></h5>
+                        <ul class="mt-3">
+                            <a href="mailto:venkoula.amir@hotmail.com" >benkoula.amir@hotmail.com</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title lead"><b>Fiche métier</b></h5>
+                        <ul class="mt-3">
+                            <p><a href="https://www.onisep.fr/Ressources/Univers-Metier/Metiers/developpeur-developpeuse-informatique" target="_blank">Développeur Informatique</a></p>
+                            <p><a href="https://www.onisep.fr/content/location/762296/version_longue" target="_blank">Ingénieur Logiciel</a></p>
+                            <p><a href="https://www.onisep.fr/Ressources/Univers-Metier/Metiers/integrateur-integratrice-web" target="_blank">Intégrateur Web</a></p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title lead"><b>Mon autoformation</b></h5>
+                            <div class="row text-center">
+                                <div class="col my-4">
+                                    <a href="https://docs.nestjs.com/" target="_blank">
+                                        <img src="img/nestjs_logo.svg" class="img-fluid" alt="Responsive image" style="max-width: 8rem;"> 
+                                    </a>
+                                </div>
+                                <div class="col m-auto">
+                                    <a href="https://www.coursera.org/" target="_blank">
+                                        <img class="mx-4" src="img/coursera-logo.png" class="img-fluid" alt="Responsive image" style="max-width: 15rem;">
+                                    </a>
+                                </div>
+                                <div class="col my-4">
+                                    <a href="https://www.codewars.com/" target="_blank">
+                                        <img class="mx-4" src="img/codewars-logo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col my-4">
+                                    <a href="https://javascript.info/" target="_blank">
+                                        <img class="mx-4" src="img/javascriptinfo_logo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem; border-radius: 100%;">
+                                    </a>
+                                </div>
+                                <div class="col my-4">
+                                    <a href="https://academy.ligolang.org/" target="_blank">
+                                        <img class="mx-4" src="img/ligologo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem; "> 
+                                    </a>
+                                </div>
+                                <div class="col my-4">
+                                    <a href="https://fr.reactjs.org/" target="_blank">
+                                        <img class="mx-4" src="img/react_logo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem;"> 
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-2"></div>
+                            <figure class="blockquote">
+                                <p class="mt-5 ml-3">Blogs</p>
+                            </figure>
+                            <ul class="ml-2">
+                                <li><a href="https://2ality.com/index.html" target="_blank">2ality</a></li>
+                                <li><a href="https://khalilstemmler.com/articles/" target="_blank">Khalil Stemmler</a></li>
+                                <li><a href="http://dmitrysoshnikov.com/" target="_blank">Dmitry Soshnikov</a></li>
+                                <li><a href="https://martinfowler.com/" target="_blank">Martin Flower</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row text-center">
-                        <div class="col my-4">
-                            <img class="mx-4" src="img/javascriptinfo_logo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem; border-radius: 100%;"> 
-                        </div>
-                        <div class="col my-4">
-                            <img class="mx-4" src="img/ligologo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem; "> 
-                        </div>
-                        <div class="col my-4">
-                            <img class="mx-4" src="img/react_logo.png" class="img-fluid" alt="Responsive image" style="max-width: 10rem;"> 
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="p-3"></div>
-                    <h5 class="mt-5 ml-3">Blogs</h5>
-                    <ul class="ml-2">
-                        <li><a href="https://2ality.com/index.html">2ality</a></li>
-                        <li><a href="https://khalilstemmler.com/articles/">Khalil Stemmler</a></li>
-                        <li><a href="http://dmitrysoshnikov.com/">Dmitry Soshnikov</a></li>
-                        <li><a href="https://martinfowler.com/">Martin Flower</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row ml-5">
-        <div class="col-sm-12 mt-4 text-center">
-            <button type="button" class="btn btn-info">
-                <h5 class="lead"><a href="./img/cv_amirbenkoula.pdf" target="_blank"><b>Mon CV</b></a></h5>
-            </button>
+
+        <div class="container mt-4 text-center">
+            <a href="./img/cv_amirbenkoula.pdf" target="_blank">
+                <button type="button" class="btn btn-primary">
+                    Mon CV
+                </button>
+            </a>
         </div>
-    </div>
-
-</div>
-
-
+      </div>
+      
+    
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -269,7 +273,7 @@
 
 <footer class="footer mt-auto py-3">
     <div class="container">
-      <a href="pages/mentions_légales.html">Mentions Légales</a>
+      <a class="text-white" href="pages/mentions_legales.html">Mentions Légales</a>
     </div>
 </footer>
   

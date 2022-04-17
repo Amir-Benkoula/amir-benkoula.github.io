@@ -1,24 +1,15 @@
 {
-  "name": "amir-benkoula.github.io",
+  "name": "amir-benkoula-portfolio",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass --include-path scss/ scss/main.scss --output dist"
+    "build": "sass scss/custom.scss css/index.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Amir-Benkoula/amir-benkoula.github.io.git"
-  },
-  "author": "",
+  "author": "Amir Benkoula",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Amir-Benkoula/amir-benkoula.github.io/issues"
-  },
-  "homepage": "https://github.com/Amir-Benkoula/amir-benkoula.github.io#readme",
-  "description": "",
   "dependencies": {
-    "bootstrap": "^4.5.3",
-    "node-sass": "^5.0.0"
+    "sass": "^1.50.0"
   }
 }
