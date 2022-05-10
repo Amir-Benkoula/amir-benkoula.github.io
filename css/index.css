@@ -11132,6 +11132,7 @@ body {
 
 nav, footer {
   background-color: #112D4E;
+  box-shadow: 1px 1px 10px black;
 }
 
 /*# sourceMappingURL=index.css.map */
