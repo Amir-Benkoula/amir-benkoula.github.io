@@ -60,6 +60,8 @@
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
         <h1 class="display-4 fw-normal">La plateforme Item Service</h1>
+    </div>
+    <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
         <p>Afin de permettre aux créateurs et au studios de jeux vidéos de tokeniser des items sur Tezos, l'entreprise à créé une plateforme de services web. Ce projet à été mon premier chez JWA Lab.</p>
         <p>Premièrement, j'ai été informé de l'architecture de la plateforme et des technologies que nous utiliserons.</p>
         <p>L'architecture est microservices. C'est à dire que la plateforme est composée de deux services, qui communiquent entre eux et qui sont déployés indépendamment. Le premier service est l'Item-Service, il contient les endpoints de l'API. Ce service effectue des opperations avec les items sur une base de données Elasticsearch. Il permet de créer, modifier, assigner, transférer et rechercher des item.</p>
@@ -78,7 +80,9 @@
         <p>Ce diagramme n'est plus effectif car l'application a été refactorisé.</p>
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <h1>L'utilisation de Docker</h1>
+        <h1 class="display-4 fw-normal">L'utilisation de Docker</h1>
+    </div>
+    <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
         <p>Afin de lancer la plateforme en local, j'avais besoin d'une configuration possèdant une quantité de RAM minimale. Etant donné que je travaille à distance, je doit utiliser mon propre matériel. Ce qui implique de le protéger et de prendre des précautions. Pour la configuration, l'entreprise m'a financé l'achat de 16go de RAM en plus de ce que j'ai déjà, ce qui me fait 24Go au total.</p>
         <p>Si il y a besoin d'autant de mémoire vivre, c'est parce que la plateforme est déployée en local sur Docker. Docker est une plateforme permettant de lancer certaines applications dans des conteneurs logiciels. L'intérêt de Docker en développement est de garantir à chaque développeur qu'il pourra lancer l'application quel que soit son système d'exploitation ou sa configuration.</p>
         <p>Les applications sont mises en ligne sur la plateforme de Docker, elles sont nommées "images". Dans son projet, il est donc possible de créer un fichier, contenant les images à télécharger et à lancer. Voici un exemple de fichier docker-compose.yml :</p>
