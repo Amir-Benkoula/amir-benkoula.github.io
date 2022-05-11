@@ -1,110 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="icon" href="img/programmerico.png" />
     <title>Amir Benkoula - PlayTiX Item Service</title>
 
     <style>
-    img{
+      img {
         margin-top: 1em;
         margin-bottom: 1em;
         border-radius: 1mm;
-    }
-    a, a:hover {
+      }
+      a,
+      a:hover {
         color: white;
-    }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Amir Benkoula</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown active">
-                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projets
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="appli_web_playtix.html">Application web PlayTiX</a></li>
-                    <li><a class="dropdown-item" href="terraform_et_npm.html">CLI Terraform et déploiement NPM</a></li>
-                    <li><a class="dropdown-item active" href="#">PlayTiX Item Service</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="">Réalisations professionnelles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="veille_dev_web_detail.html">Veille developpement web</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Amir Benkoula</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projets
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="appli_web_playtix.html"
+                    >Application web PlayTiX</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="terraform_et_npm.html"
+                    >CLI Terraform et déploiement NPM</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="#"
+                    >PlayTiX Item Service</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href=""
+                >Réalisations professionnelles</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="veille_dev_web_detail.html"
+                >Veille developpement web</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <h1 class="display-4 fw-normal">PlayTiX Item Service</h1>
+      <h1 class="display-4 fw-normal">PlayTiX Item Service</h1>
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <p>L'objectif du projet PlayTiX étant d'être une plateforme de jeux vidéos liés à la blockchain, le premier projet de l'entreprise a été de mettre en place la "tokenisation" d'item sur la blockchain Tezos.</p>
-        <p><b>Qu'est-ce que la blockchain ?</b></p>
-        <p>C'est une technologie de stockage et de transmission d'informations, prenant la forme d'une base de données. qui a la particularité d'être partagée simultanément avec tous ses utilisateurs et qui ne dépend d'aucun organe central. a pour avantage d'être rapide et sécurisée.</p>
-        <p>L'entreprise a choisi la blockchain Tezos pour plusieurs raisons, mais principalement car c'ette blockchain est propice à la création de NFT (Token Non Fongibles)</p>
+      <p>
+        L'objectif du projet PlayTiX étant d'être une plateforme de jeux vidéos
+        liés à la blockchain, le premier projet de l'entreprise a été de mettre
+        en place la "tokenisation" d'item sur la blockchain Tezos.
+      </p>
+      <p><b>Qu'est-ce que la blockchain ?</b></p>
+      <p>
+        C'est une technologie de stockage et de transmission d'informations,
+        prenant la forme d'une base de données. qui a la particularité d'être
+        partagée simultanément avec tous ses utilisateurs et qui ne dépend
+        d'aucun organe central. a pour avantage d'être rapide et sécurisée.
+      </p>
+      <p>
+        L'entreprise a choisi la blockchain Tezos pour plusieurs raisons, mais
+        principalement car c'ette blockchain est propice à la création de NFT
+        (Token Non Fongibles)
+      </p>
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <h1 class="display-4 fw-normal">La plateforme Item Service</h1>
+      <h1 class="display-4 fw-normal">La plateforme Item Service</h1>
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <p>Afin de permettre aux créateurs et au studios de jeux vidéos de tokeniser des items sur Tezos, l'entreprise à créé une plateforme de services web. Ce projet à été mon premier chez JWA Lab.</p>
-        <p>Premièrement, j'ai été informé de l'architecture de la plateforme et des technologies que nous utiliserons.</p>
-        <p>L'architecture est microservices. C'est à dire que la plateforme est composée de deux services, qui communiquent entre eux et qui sont déployés indépendamment. Le premier service est l'Item-Service, il contient les endpoints de l'API. Ce service effectue des opperations avec les items sur une base de données Elasticsearch. Il permet de créer, modifier, assigner, transférer et rechercher des item.</p>
-        <p>J'ai participé au développement de la plateforme avant son réfactoring.</p>
-        <p>
-            Le service est disponible en open-source <a target="_blank" href="https://github.com/jwa-lab/item-service">ici</a>
-        </p>
-        <p>En ce qui concerne le deuxieme service, celui-ci contient les smart-contracts, c'est du code qui permet d'effectuer des opérations sur la blockchain. Pour Tezos les smart-contracts sont codés en langage LIGO, j'ai donc du me former aux bases du langage afin de coder un contrat.</p>
-        <p>Le contrat en question permet l'assignation et le transfert d'item entre utilisateurs, voici un apercu du code disponible <a href="https://github.com/jwa-lab/tokenization-service-contracts/blob/main/contracts/Warehouse.ligo">ici</a> :</p>
-        <img class="img-fluid" src="../img/item_service_img/Image1.jpg" alt="">
-        <div></div>
-        <img class="img-fluid" src="../img/item_service_img/Image2.jpg" alt="">
-        <p>Ce service communiquera donc avec l'Item-Service grâce à la technologie <a href="https://nats.io/">Nats</a>. Elle permet aux services de communiquer entre eux de manière performante, ce qui est important pour la plateforme car les opérations sur la blockchain prennent du temps.</p>
-        <p>Afin de comprendre comment se fait la tokenization d'un item, j'ai créé un diagramme séquence :</p>
-        <img class="img-fluid" src="../img/item_service_img/Tokenization_Diagram.png" alt="">
-        <p>Ce diagramme n'est plus effectif car l'application a été refactorisé.</p>
+      <p>
+        Afin de permettre aux créateurs et au studios de jeux vidéos de
+        tokeniser des items sur Tezos, l'entreprise à créé une plateforme de
+        services web. Ce projet à été mon premier chez JWA Lab.
+      </p>
+      <p>
+        Premièrement, j'ai été informé de l'architecture de la plateforme et des
+        technologies que nous utiliserons.
+      </p>
+      <p>
+        L'architecture est microservices. C'est à dire que la plateforme est
+        composée de deux services, qui communiquent entre eux et qui sont
+        déployés indépendamment. Le premier service est l'Item-Service, il
+        contient les endpoints de l'API. Ce service effectue des opperations
+        avec les items sur une base de données Elasticsearch. Il permet de
+        créer, modifier, assigner, transférer et rechercher des item.
+      </p>
+      <p>
+        J'ai participé au développement de la plateforme avant son réfactoring.
+      </p>
+      <p>
+        Le service est disponible en open-source
+        <a target="_blank" href="https://github.com/jwa-lab/item-service"
+          >ici</a
+        >
+      </p>
+      <p>
+        En ce qui concerne le deuxieme service, celui-ci contient les
+        smart-contracts, c'est du code qui permet d'effectuer des opérations sur
+        la blockchain. Pour Tezos les smart-contracts sont codés en langage
+        LIGO, j'ai donc du me former aux bases du langage afin de coder un
+        contrat.
+      </p>
+      <p>
+        Le contrat en question permet l'assignation et le transfert d'item entre
+        utilisateurs, voici un apercu du code disponible
+        <a
+          href="https://github.com/jwa-lab/tokenization-service-contracts/blob/main/contracts/Warehouse.ligo"
+          >ici</a
+        >
+        :
+      </p>
+      <img class="img-fluid" src="../img/item_service_img/Image1.jpg" alt="" />
+      <div></div>
+      <img class="img-fluid" src="../img/item_service_img/Image2.jpg" alt="" />
+      <p>
+        Ce service communiquera donc avec l'Item-Service grâce à la technologie
+        <a href="https://nats.io/">Nats</a>. Elle permet aux services de
+        communiquer entre eux de manière performante, ce qui est important pour
+        la plateforme car les opérations sur la blockchain prennent du temps.
+      </p>
+      <p>
+        Afin de comprendre comment se fait la tokenization d'un item, j'ai créé
+        un diagramme séquence :
+      </p>
+      <img
+        class="img-fluid"
+        src="../img/item_service_img/Tokenization_Diagram.png"
+        alt=""
+      />
+      <p>
+        Ce diagramme n'est plus effectif car l'application a été refactorisé.
+      </p>
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <h1 class="display-4 fw-normal">L'utilisation de Docker</h1>
+      <h1 class="display-4 fw-normal">L'utilisation de Docker</h1>
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <p>Afin de lancer la plateforme en local, j'avais besoin d'une configuration possèdant une quantité de RAM minimale. Etant donné que je travaille à distance, je doit utiliser mon propre matériel. Ce qui implique de le protéger et de prendre des précautions. Pour la configuration, l'entreprise m'a financé l'achat de 16go de RAM en plus de ce que j'ai déjà, ce qui me fait 24Go au total.</p>
-        <p>Si il y a besoin d'autant de mémoire vivre, c'est parce que la plateforme est déployée en local sur Docker. Docker est une plateforme permettant de lancer certaines applications dans des conteneurs logiciels. L'intérêt de Docker en développement est de garantir à chaque développeur qu'il pourra lancer l'application quel que soit son système d'exploitation ou sa configuration.</p>
-        <p>Les applications sont mises en ligne sur la plateforme de Docker, elles sont nommées "images". Dans son projet, il est donc possible de créer un fichier, contenant les images à télécharger et à lancer. Voici un exemple de fichier docker-compose.yml :</p>
-        <img class="img-fluid" src="../img/item_service_img/Image3.jpg" alt="">
-        <p>Il est aussi possible de créer un fichier de configuration des conteneurs, il est nommé Dockerfile :</p>
-        <img class="img-fluid" src="../img/item_service_img/Image4.jpg" alt="">
-        <p>Voici un tutoriel video pour comprendre Docker (en anglais)</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gAkwW2tuIqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>
+        Afin de lancer la plateforme en local, j'avais besoin d'une
+        configuration possèdant une quantité de RAM minimale. Etant donné que je
+        travaille à distance, je doit utiliser mon propre matériel. Ce qui
+        implique de le protéger et de prendre des précautions. Pour la
+        configuration, l'entreprise m'a financé l'achat de 16go de RAM en plus
+        de ce que j'ai déjà, ce qui me fait 24Go au total.
+      </p>
+      <p>
+        Si il y a besoin d'autant de mémoire vivre, c'est parce que la
+        plateforme est déployée en local sur Docker. Docker est une plateforme
+        permettant de lancer certaines applications dans des conteneurs
+        logiciels. L'intérêt de Docker en développement est de garantir à chaque
+        développeur qu'il pourra lancer l'application quel que soit son système
+        d'exploitation ou sa configuration.
+      </p>
+      <p>
+        Les applications sont mises en ligne sur la plateforme de Docker, elles
+        sont nommées "images". Dans son projet, il est donc possible de créer un
+        fichier, contenant les images à télécharger et à lancer. Voici un
+        exemple de fichier docker-compose.yml :
+      </p>
+      <img class="img-fluid" src="../img/item_service_img/Image3.jpg" alt="" />
+      <p>
+        Il est aussi possible de créer un fichier de configuration des
+        conteneurs, il est nommé Dockerfile :
+      </p>
+      <img class="img-fluid" src="../img/item_service_img/Image4.jpg" alt="" />
+      <p>Voici un tutoriel video pour comprendre Docker (en anglais)</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/gAkwW2tuIqE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
-    
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 
-<footer class="footer mt-auto py-3">
+  <footer class="footer mt-auto py-3">
     <div class="container">
       <a class="text-white" href="mentions_legales.html">Mentions Légales</a>
     </div>
-</footer>
-  
+  </footer>
 </html>

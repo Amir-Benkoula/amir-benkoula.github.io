@@ -1,267 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="icon" href="img/programmerico.png" />
     <title>Amir Benkoula - CLI Terraform et Déploiement NPM</title>
- 
-    <style>
-      img{
-          margin-top: 1em;
-          margin-bottom: 1em;
-          border-radius: 1mm;
-      }
-      a, a:hover {
-          color: white;
-      }
-  </style>
 
-</head>
-<body>
+    <style>
+      img {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 1mm;
+      }
+      a,
+      a:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Amir Benkoula</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown active">
-                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projets
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="appli_web_playtix.html">Application web PlayTiX</a></li>
-                    <li><a class="dropdown-item active" href="#">CLI Terraform et déploiement NPM</a></li>
-                    <li><a class="dropdown-item" href="item_service.html">PlayTiX Item Service</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="">Réalisations professionnelles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="veille_dev_web_detail.html">Veille developpement web</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Amir Benkoula</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projets
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="appli_web_playtix.html"
+                    >Application web PlayTiX</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="#"
+                    >CLI Terraform et déploiement NPM</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="item_service.html"
+                    >PlayTiX Item Service</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href=""
+                >Réalisations professionnelles</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="veille_dev_web_detail.html"
+                >Veille developpement web</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <h1 class="display-4 fw-normal">CLI Terraform et déploiement NPM</h1>
+      <h1 class="display-4 fw-normal">CLI Terraform et déploiement NPM</h1>
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-      <img class="img-fluid" style="width: 300px;" src="../img/terraform_npm_img/terraform.png" alt="">
+      <img
+        class="img-fluid"
+        style="width: 300px"
+        src="../img/terraform_npm_img/terraform.png"
+        alt=""
+      />
     </div>
     <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <p>
-          Le premier projet de l'entreprise a été de créer une plateforme de services web. Cette plateforme servira par la suite à créer des items sur la blockchain Tezos et ainsi "tokeniser" des objets de jeu video, c'est a dire, les rendre fongibles.
-        </p>
-        <p>
-          Afin de rendre disponible la plateforme à l'utilisation, il faut la déployer. Le choix de l'entreprise pour l'hébergement est AWS. Amazon Web Services est une division du groupe américain de commerce électronique Amazon, spécialisée dans les services de cloud computing à la demande pour les entreprises et particuliers.
-        </p>
-        <p>
-          Pour faciliter le déploiement nous utilisons Terraform. C’est un environnement logiciel d’ « infrastructure as code » publié en open-source par la société HashiCorp. Cet outil permet d'automatiser la construction des ressources d'une infrastructure de centre de données comme un réseau, des machines virtuelles, un groupe de sécurité ou une base de données.
-        </p>
-        <p>
-          Terraform utilise des fichiers de configuration comme celui-ci :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image1.png" alt="">
-        <p>
-          Je n’ai pas travaillé sur la rédaction de ces fichiers. Mon rôle a été de créer une interface en ligne de commande (CLI) permettant de faciliter le déploiement des ressources sur terraform.
-        </p>
-        <p>
-          Pour déployer des ressources il faut :
-        </p>
-        <ul>
-          <p>-	Créer un workspace</p>
-          <p>-	Initialiser les ressources avec : terraform init</p>
-          <p>-	Construire les ressources avec : terraform apply</p>
-          <p>-	Eventuellement détruire les ressources avec : terraform destroy</p>
-        </ul>
-        <p>
-          Voilà a quoi ressemble une ressource déployée sur l'interface en ligne de Terraform:
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image2.png" alt="">
-        <p>
-          Ce processus est fastidieux car il requiert de se déplacer à chaque fois dans le dossier requis pour déployer une ressource et y lancer chaque commande. Le temps de déploiement peut aller jusque 15min et la destruction jusqu’à 5min.
-        </p>
-        <p>
-          Il est aussi nécessaire pour certaines ressources d’êtres déployées avec des variables d’environnement, et cela devait se faire en passant par l’application web de terraform.
-        </p>
-        <p>
-          Le CLI permet donc de faciliter l’exécution des commandes tout en passant des variables en paramètre.
-        </p>
-        <p>
-          La tâche faisait partie de l’Epic Productionize, regroupant toutes les tâches liées à la production :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image3.png" alt="">
-        <p>
-          On peut y voir toutes les tâches et la barre de progression des tâches :
-        </p>
-        <p>-	En vert les tâches terminées</p>
-        <p>-	En bleu les tâches en cours</p>
-        <p>-	En blanc les tâches à faire</p>
-        <p>
-          Voici quelques tâches qui m’ont été attribuées et que j’ai créé :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image4.png" alt="">
-        <p>
-          Pour la création du CLI j’ai dû utiliser les paquets commander, chalk et node-tfe.
-        </p>
-        <p>
-          Commander permet de créer une interface en ligne de commande sur Node.js. Et chalk permet de styliser le CLI
-        </p>
-        <p>
-          On code la commande et l’action qu’elle va faire, et on peut lui attribuer des paramètres.
-        </p>
-        <p>
-          Avec commander j’ai utilisé node-tfe, un paquet qui permet d’utiliser l’API de Terraform.
-        </p>
-        <p>
-          Liens des paquets : 
-        </p>
-        <p>
-          <a href="https://www.npmjs.com/package/commander ">- Commander</a>
-        </p>
-        <p>
-          <a href="https://www.npmjs.com/package/chalk ">- Chalk</a>
-        </p>
-        <p>
-          <a href="https://www.npmjs.com/package/node-tfe ">- Node-Tfe</a>
-        </p>
-        <p>
-          Voici quelques exemples de commandes :
-        </p>
-        <p>
-          Pour construire un workspace :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image5.png" alt="">
-        <div></div>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image6.png" alt="">
-        <p>
-          Pour appliquer des changements a un workspace existant :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image7.png" alt="">
-        <p>
-          En ce qui concerne la rédaction de tests, j’ai plusieurs fois rédigé des tests unitaires complets, et j’ai « refactor » des tests end to end du paquet node-tfe : voici le lien du code <a href="https://github.com/jwa-lab/node-tfe/blob/31d54900e9ab905df9cd0a03f6f42c85bff4f8f7/e2e/client.e2e.test.ts">node-tfe</a>
-        </p>
-        <p>
-          Un exemple :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image8.png" alt="">
-        <p>
-          Une des dernières tâches consistait à supprimer les tags d’un workspace avec la destruction de ce dernier. Le problème était que je la fonctionnalité n’était pas présente dans node-tfe. J’ai alors dû l’ajouter.
-        </p>
-        <p>
-          Voici le commit contenant l’ajout de la fonctionnalité et des tests : <a href="https://github.com/jwa-lab/node-tfe/commit/31d54900e9ab905df9cd0a03f6f42c85bff4f8f7">commit</a>
-        </p>
-        <p>
-          Après avoir ajouté la fonctionnalité. Je devais mettre à jour le répertoire principal. Pour cela j’aurais pu simplement demander au propriétaire du package de le mettre à jour. Mais j’ai plutôt mis en place une procédure pour déployer le package sur npm à chaque fois que le répertoire principal est mis à jour.
-        </p>
-      </div>
-      <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-          <img class="img-fluid" style="width: 300px;" src="../img/terraform_npm_img/npm.png" alt="">
-      </div>
-      <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <p>
-          Node Package Manager est le gestionnaire de paquets par défaut de Node.js. C’est un client en ligne de commande qui permet d’installer tous les paquets nécessaires au bon fonctionnement de son application.
-        </p>
-        <p>
-          Par exemple si je souhaite utiliser le paquet axios pour coder des requêtes http, je peux l’installer facilement grâce à npm avec la commande :
-        </p>
-        <p>
-          - npm install axios
-        </p>
-        <p>
-          Il faut d’abord vérifier que le nom du paquet est le bon. Pour cela je peux aller voir sur le site npmjs.com et rechercher le paquet axios
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image9.png" alt="">
-        <p>
-          Je peux ainsi voir quelle commande utiliser pour installer le paquet. Et je suis prêt à l’utiliser.
-        </p>
-        <p>
-          Dans le cas du paquet node-tfe que je devais mettre à jour, voici sa page npm : 
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image10.png" alt="">
-        <p>
-          Etant donné que le créateur du paquet ne travaillait plus dessus et que nous avions besoin d’une fonctionnalité en plus. J’ai mis en place, grâce à GitHub Actions, une procédure de déploiement automatique du code à chaque mise à jour.
-        </p>
-      </div>
-      <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <h1 class="display-4 fw-normal">GitHub Actions</h1>
-      </div>
-      <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
-        <p>
-          Actions est un outil créé par GitHub pour le déploiement continu de son application ou paquet par exemple
-        </p>
-        <p>
-          Voici comment mettre en place le déploiement continue avec GitHub Actions :
-        </p>
-        <p>
-          1.	Créer un répertoire .github/workflows et y créer un fichier de configuration en .yml
-        </p>
-        <p>
-          2.	Dans ce fichier, ecrire la configuration voulue pour le déploiement.:
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image11.png" alt="">
-        <p>
-          On peut y voir que le déploiement se fait au moment de la publication d’une release. Une release est une mise à jour du projet, ajoutant des ou une fonctionnalité : mineure, moyenne ou majeure.
-        </p>
-        <p>
-          Au moment de l’action, ici la release, le serveur de GitHub va installer et lancer les tests du projet, si ces deux étapes passent, alors cela va lancer la publication du projet sur npm avec la commande : npm publish et sur le compte correspondant au token d’authentification enregistré dans les paramètres du projet : secrets.NPM_TOKEN
-        </p>
-        <p>
-          3.	Enregistrer la configuration et mettre à jour le projet sur GitHub
-        </p>
-        <p>
-          4.	Il est possible de voir l’historique des déploiements faits grâce à Actions :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image12.png" alt="">
-        <p>
-          Ici il y a un workflow qui est passé et un autre non. 
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image12.png" alt="">
-        <p>
-          5.	En cliquant sur un workflow on peut y voir les détails :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image13.png" alt="">
-        <p>
-          On retrouve la configuration faite dans le fichier .yml
-        </p>
-        <p>
-          6.	Il est possible de voir les logs de chaque commande mais ici il n’est plus possible de les voir :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image14.png" alt="">
-        <p>
-          Une fois le workflow terminé, on peut voir que la mise à jour a bien été déployée sur npm :
-        </p>
-        <p>
-          La version GitHub :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image15.png" alt="">
-        <p>
-          La version npm :
-        </p>
-        <img class="img-fluid" src="../img/terraform_npm_img/Image16.png" alt="">
-      </div>
-        
-    
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+      <p>
+        Le premier projet de l'entreprise a été de créer une plateforme de
+        services web. Cette plateforme servira par la suite à créer des items
+        sur la blockchain Tezos et ainsi "tokeniser" des objets de jeu video,
+        c'est a dire, les rendre fongibles.
+      </p>
+      <p>
+        Afin de rendre disponible la plateforme à l'utilisation, il faut la
+        déployer. Le choix de l'entreprise pour l'hébergement est AWS. Amazon
+        Web Services est une division du groupe américain de commerce
+        électronique Amazon, spécialisée dans les services de cloud computing à
+        la demande pour les entreprises et particuliers.
+      </p>
+      <p>
+        Pour faciliter le déploiement nous utilisons Terraform. C’est un
+        environnement logiciel d’ « infrastructure as code » publié en
+        open-source par la société HashiCorp. Cet outil permet d'automatiser la
+        construction des ressources d'une infrastructure de centre de données
+        comme un réseau, des machines virtuelles, un groupe de sécurité ou une
+        base de données.
+      </p>
+      <p>Terraform utilise des fichiers de configuration comme celui-ci :</p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image1.png" alt="" />
+      <p>
+        Je n’ai pas travaillé sur la rédaction de ces fichiers. Mon rôle a été
+        de créer une interface en ligne de commande (CLI) permettant de
+        faciliter le déploiement des ressources sur terraform.
+      </p>
+      <p>Pour déployer des ressources il faut :</p>
+      <ul>
+        <p>- Créer un workspace</p>
+        <p>- Initialiser les ressources avec : terraform init</p>
+        <p>- Construire les ressources avec : terraform apply</p>
+        <p>- Eventuellement détruire les ressources avec : terraform destroy</p>
+      </ul>
+      <p>
+        Voilà a quoi ressemble une ressource déployée sur l'interface en ligne
+        de Terraform:
+      </p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image2.png" alt="" />
+      <p>
+        Ce processus est fastidieux car il requiert de se déplacer à chaque fois
+        dans le dossier requis pour déployer une ressource et y lancer chaque
+        commande. Le temps de déploiement peut aller jusque 15min et la
+        destruction jusqu’à 5min.
+      </p>
+      <p>
+        Il est aussi nécessaire pour certaines ressources d’êtres déployées avec
+        des variables d’environnement, et cela devait se faire en passant par
+        l’application web de terraform.
+      </p>
+      <p>
+        Le CLI permet donc de faciliter l’exécution des commandes tout en
+        passant des variables en paramètre.
+      </p>
+      <p>
+        La tâche faisait partie de l’Epic Productionize, regroupant toutes les
+        tâches liées à la production :
+      </p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image3.png" alt="" />
+      <p>
+        On peut y voir toutes les tâches et la barre de progression des tâches :
+      </p>
+      <p>- En vert les tâches terminées</p>
+      <p>- En bleu les tâches en cours</p>
+      <p>- En blanc les tâches à faire</p>
+      <p>Voici quelques tâches qui m’ont été attribuées et que j’ai créé :</p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image4.png" alt="" />
+      <p>
+        Pour la création du CLI j’ai dû utiliser les paquets commander, chalk et
+        node-tfe.
+      </p>
+      <p>
+        Commander permet de créer une interface en ligne de commande sur
+        Node.js. Et chalk permet de styliser le CLI
+      </p>
+      <p>
+        On code la commande et l’action qu’elle va faire, et on peut lui
+        attribuer des paramètres.
+      </p>
+      <p>
+        Avec commander j’ai utilisé node-tfe, un paquet qui permet d’utiliser
+        l’API de Terraform.
+      </p>
+      <p>Liens des paquets :</p>
+      <p>
+        <a href="https://www.npmjs.com/package/commander ">- Commander</a>
+      </p>
+      <p>
+        <a href="https://www.npmjs.com/package/chalk ">- Chalk</a>
+      </p>
+      <p>
+        <a href="https://www.npmjs.com/package/node-tfe ">- Node-Tfe</a>
+      </p>
+      <p>Voici quelques exemples de commandes :</p>
+      <p>Pour construire un workspace :</p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image5.png" alt="" />
+      <div></div>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image6.png" alt="" />
+      <p>Pour appliquer des changements a un workspace existant :</p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image7.png" alt="" />
+      <p>
+        En ce qui concerne la rédaction de tests, j’ai plusieurs fois rédigé des
+        tests unitaires complets, et j’ai « refactor » des tests end to end du
+        paquet node-tfe : voici le lien du code
+        <a
+          href="https://github.com/jwa-lab/node-tfe/blob/31d54900e9ab905df9cd0a03f6f42c85bff4f8f7/e2e/client.e2e.test.ts"
+          >node-tfe</a
+        >
+      </p>
+      <p>Un exemple :</p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image8.png" alt="" />
+      <p>
+        Une des dernières tâches consistait à supprimer les tags d’un workspace
+        avec la destruction de ce dernier. Le problème était que je la
+        fonctionnalité n’était pas présente dans node-tfe. J’ai alors dû
+        l’ajouter.
+      </p>
+      <p>
+        Voici le commit contenant l’ajout de la fonctionnalité et des tests :
+        <a
+          href="https://github.com/jwa-lab/node-tfe/commit/31d54900e9ab905df9cd0a03f6f42c85bff4f8f7"
+          >commit</a
+        >
+      </p>
+      <p>
+        Après avoir ajouté la fonctionnalité. Je devais mettre à jour le
+        répertoire principal. Pour cela j’aurais pu simplement demander au
+        propriétaire du package de le mettre à jour. Mais j’ai plutôt mis en
+        place une procédure pour déployer le package sur npm à chaque fois que
+        le répertoire principal est mis à jour.
+      </p>
+    </div>
+    <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
+      <img
+        class="img-fluid"
+        style="width: 300px"
+        src="../img/terraform_npm_img/npm.png"
+        alt=""
+      />
+    </div>
+    <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
+      <p>
+        Node Package Manager est le gestionnaire de paquets par défaut de
+        Node.js. C’est un client en ligne de commande qui permet d’installer
+        tous les paquets nécessaires au bon fonctionnement de son application.
+      </p>
+      <p>
+        Par exemple si je souhaite utiliser le paquet axios pour coder des
+        requêtes http, je peux l’installer facilement grâce à npm avec la
+        commande :
+      </p>
+      <p>- npm install axios</p>
+      <p>
+        Il faut d’abord vérifier que le nom du paquet est le bon. Pour cela je
+        peux aller voir sur le site npmjs.com et rechercher le paquet axios
+      </p>
+      <img class="img-fluid" src="../img/terraform_npm_img/Image9.png" alt="" />
+      <p>
+        Je peux ainsi voir quelle commande utiliser pour installer le paquet. Et
+        je suis prêt à l’utiliser.
+      </p>
+      <p>
+        Dans le cas du paquet node-tfe que je devais mettre à jour, voici sa
+        page npm :
+      </p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image10.png"
+        alt=""
+      />
+      <p>
+        Etant donné que le créateur du paquet ne travaillait plus dessus et que
+        nous avions besoin d’une fonctionnalité en plus. J’ai mis en place,
+        grâce à GitHub Actions, une procédure de déploiement automatique du code
+        à chaque mise à jour.
+      </p>
+    </div>
+    <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
+      <h1 class="display-4 fw-normal">GitHub Actions</h1>
+    </div>
+    <div class="px-4 py-4 my-5 text-center text-white lead bg-primary">
+      <p>
+        Actions est un outil créé par GitHub pour le déploiement continu de son
+        application ou paquet par exemple
+      </p>
+      <p>
+        Voici comment mettre en place le déploiement continue avec GitHub
+        Actions :
+      </p>
+      <p>
+        1. Créer un répertoire .github/workflows et y créer un fichier de
+        configuration en .yml
+      </p>
+      <p>
+        2. Dans ce fichier, ecrire la configuration voulue pour le déploiement.:
+      </p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image11.png"
+        alt=""
+      />
+      <p>
+        On peut y voir que le déploiement se fait au moment de la publication
+        d’une release. Une release est une mise à jour du projet, ajoutant des
+        ou une fonctionnalité : mineure, moyenne ou majeure.
+      </p>
+      <p>
+        Au moment de l’action, ici la release, le serveur de GitHub va installer
+        et lancer les tests du projet, si ces deux étapes passent, alors cela va
+        lancer la publication du projet sur npm avec la commande : npm publish
+        et sur le compte correspondant au token d’authentification enregistré
+        dans les paramètres du projet : secrets.NPM_TOKEN
+      </p>
+      <p>
+        3. Enregistrer la configuration et mettre à jour le projet sur GitHub
+      </p>
+      <p>
+        4. Il est possible de voir l’historique des déploiements faits grâce à
+        Actions :
+      </p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image12.png"
+        alt=""
+      />
+      <p>Ici il y a un workflow qui est passé et un autre non.</p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image12.png"
+        alt=""
+      />
+      <p>5. En cliquant sur un workflow on peut y voir les détails :</p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image13.png"
+        alt=""
+      />
+      <p>On retrouve la configuration faite dans le fichier .yml</p>
+      <p>
+        6. Il est possible de voir les logs de chaque commande mais ici il n’est
+        plus possible de les voir :
+      </p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image14.png"
+        alt=""
+      />
+      <p>
+        Une fois le workflow terminé, on peut voir que la mise à jour a bien été
+        déployée sur npm :
+      </p>
+      <p>La version GitHub :</p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image15.png"
+        alt=""
+      />
+      <p>La version npm :</p>
+      <img
+        class="img-fluid"
+        src="../img/terraform_npm_img/Image16.png"
+        alt=""
+      />
+    </div>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 
-<footer class="footer mt-auto py-3">
+  <footer class="footer mt-auto py-3">
     <div class="container">
       <a class="text-white" href="mentions_legales.html">Mentions Légales</a>
     </div>
-</footer>
-  
+  </footer>
 </html>

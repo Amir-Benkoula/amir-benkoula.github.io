@@ -1,21 +1,22 @@
-$primary: #3F72AF;
-$secondary: #DBE2EF;
+$primary: #3f72af;
+$secondary: #dbe2ef;
 
 @import "bootstrap/bootstrap.scss";
 
 footer {
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
-body{
-    background-color: #F9F7F7;
+body {
+  background-color: #f9f7f7;
 }
 
-nav, footer{
-    background-color: #112D4E;
-    box-shadow: 1px 1px 10px black;
+nav,
+footer {
+  background-color: #112d4e;
+  box-shadow: 1px 1px 10px black;
 }
